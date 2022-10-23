@@ -29,9 +29,10 @@ console.log(addNumbers(5,4));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( num1, num2, num3 ){
+  return num1 * num2 * num3;
 }
+console.log(multiplyThree(8,4,6));
 
 
 // 5. Function that will return true if a number is positive, 

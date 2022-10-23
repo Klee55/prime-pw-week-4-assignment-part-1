@@ -59,20 +59,32 @@ console.log(isPositive(-10));
 let foods = ['steak', 'fries', 'shrimps', 'meatballs', 'eggroll', 'sushi'];
 //empty array
 //let food =[]
+//I tested this and it returned undefined
 
 function getLast( array ) {
   array = foods.pop();
   return array;
 }
 console.log(getLast());
-//testing when array is empty
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+
+let colors = ['blue', 'green', 'maroon', 'purple', 'red'];
+
 function find( value, array ){
-  
+  for (i=0; i<array.length; i++){
+    if (value === array[i]){
+      return 'true';
+    }
+  }
+  return 'false';
 }
+
+console.log(find('red', colors));
+console.log(find('pink', colors));
 
 // ----------------------
 // Stretch Goals

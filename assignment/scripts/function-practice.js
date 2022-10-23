@@ -56,9 +56,16 @@ console.log(isPositive(-10));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
+let foods = ['steak', 'fries', 'shrimps', 'meatballs', 'eggroll', 'sushi'];
+//empty array
+//let food =[]
 
+function getLast( array ) {
+  array = foods.pop();
+  return array;
 }
+console.log(getLast());
+//testing when array is empty
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;

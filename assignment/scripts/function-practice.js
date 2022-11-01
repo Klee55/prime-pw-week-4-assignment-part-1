@@ -39,10 +39,12 @@ console.log(multiplyThree(8,4,6));
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number >= 0 ){
-    return 'true';
+    //return 'true';
+    return true;
   }
   if ( number < 0 ){
-    return 'false';
+    //return 'false';
+    return false;
   }
 }
 // Call the function to test each outcome (true & false) 
@@ -62,10 +64,12 @@ let foods = ['steak', 'fries', 'shrimps', 'meatballs', 'eggroll', 'sushi'];
 //I tested this and it returned undefined
 
 function getLast( array ) {
-  array = foods.pop();
-  return array;
+  //array = foods.pop();
+  //return array;
+  return array[array.length - 1];
 }
-console.log(getLast());
+//console.log(getLast());
+console.log(getLast(foods));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -77,10 +81,12 @@ let colors = ['blue', 'green', 'maroon', 'purple', 'red'];
 function find( value, array ){
   for (i=0; i<array.length; i++){
     if (value === array[i]){
-      return 'true';
+      //return 'true';
+      return true;
     }
   }
-  return 'false';
+  //return 'false';
+  return false;
 }
 
 console.log(find('red', colors));
